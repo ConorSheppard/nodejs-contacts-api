@@ -1,5 +1,7 @@
 # Users API
 
+This being the first Node.js application I have worked on and my first time using the framework was was able to implement reading/displaying of the contacts, deleting contacts however ran short on time to complete adding/updating contacts.
+
 3 wireframes for the application
 
 
@@ -8,7 +10,7 @@
 ![alt tag](https://github.com/ConorSheppard/redhat-api/blob/master/wireframes/wireframe_contact_list.png)
 
 
-This sample project will give you a minimal users RESTful API to build your contact list template against. It only implements user listing and reading - feel free to add other actions (e.g. update, delete, create) as you see fit. It is built using JavaScript/Node.js (our language of choice), ExpressJS (a small, lightweight web MVC framework) & Mongoose (a MongoDB object modelling library).
+
 
 ## Pre-requisites
 
