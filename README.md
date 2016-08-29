@@ -12,6 +12,7 @@ A single contact
 ![alt tag](https://github.com/ConorSheppard/redhat-api/blob/master/wireframes/wireframe_contact.png)
 
 Here are a few screenshots of the application.
+
 Application Homepage
 ![alt tag](https://github.com/ConorSheppard/redhat-api/blob/master/screenshots/homepage.png)
 Contact list
@@ -37,7 +38,7 @@ To get started, you'll need to have the following requirements installed
 	git clone <this repo>
 	npm install
 	npm run-script seed # Seed the DB with Users
-	npm start
+	npm start (Alternatively run nodemon for automated server resart whenever changes are made to the application)
 
 ## Running tests
 
