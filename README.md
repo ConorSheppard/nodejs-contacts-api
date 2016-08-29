@@ -1,6 +1,6 @@
 # Users API
 
-This being the first Node.js application I have worked on and my first time using the framework was was able to implement reading/displaying of the contacts, deleting contacts however ran short on time to complete adding/updating contacts.
+This being the first Node.js application I have worked on and my first time using the framework was was able to implement reading/displaying of the contacts and deleting contacts, however I ran short on time before completing adding/updating contacts.
 
 3 wireframes for the application
 
