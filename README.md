@@ -4,14 +4,20 @@ This being the first Node.js application I have worked on and my first time usin
 
 3 wireframes for the application
 
-
+Application Homepage
 ![alt tag](https://github.com/ConorSheppard/redhat-api/blob/master/wireframes/wireframe_homepage.png)
-![alt tag](https://github.com/ConorSheppard/redhat-api/blob/master/wireframes/wireframe_contact.png)
+Contact list
 ![alt tag](https://github.com/ConorSheppard/redhat-api/blob/master/wireframes/wireframe_contact_list.png)
+A single contact
+![alt tag](https://github.com/ConorSheppard/redhat-api/blob/master/wireframes/wireframe_contact.png)
 
-
-
-
+Here are a few screenshots of the application.
+Application Homepage
+![alt tag](https://github.com/ConorSheppard/redhat-api/blob/master/screenshots/homepage.png)
+Contact list
+![alt tag](https://github.com/ConorSheppard/redhat-api/blob/master/screenshots/contact%20list.png)
+A single contact
+![alt tag](https://github.com/ConorSheppard/redhat-api/blob/master/screenshots/contact.png)
 ## Pre-requisites
 
 To get started, you'll need to have the following requirements installed
