@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="/css/github-markdown.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<head>
+    <title><%= title + ": " + user.name.first + " " + user.name.last %></title>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="http://localhost:8000/">Home</a>
+            <a class="navbar-brand" href="http://localhost:8000/add">Add Contact</a>
+        </div>
+    </nav>
+</head>
+<body class="markdown-body">
+    <div>
+        <div>
+            <img src="<%= user.picture.large %>" alt="User Profile Thumbnail">
+            <div class="markdown-body aHover" >
+                <a href="http://localhost:8000/users/edit-user/<%= user._id %>">
+                    <img src="http://www.icon2s.com/img16/16x16-black-white-metro-edit-icon.png" alt="edit-icon"/>
+                </a>
+                    <span class="markdown-body tooltiptext">Edit User</span>
+            </div>
+        </div>
+        <br>
+        <ul>
+            <li>Name: <%= user.name.first + " " + user.name.last %></li>
+            <li>Address: <%= user.location.street %>,<br>
+                <%= user.location.city %>,<br>
+                <%= user.location.state %>,<br>
+                <%= user.location.zip %>.
+            </li>
+            <li>Email: <%= user.email %></li>
+            <li>Phone: <%= user.phone %></li>
+            <li>Mobile: <%= user.cell %></li>
+        </ul>
+    </div>
+    <a href="http://localhost:8000/users/delete-user/<%= user._id %>">Delete Contact</a>
+</body>

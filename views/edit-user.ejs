@@ -1,0 +1,51 @@
+<link rel="stylesheet" href="/css/github-markdown.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<head>
+    <title><%= title %></title>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="http://localhost:8000/">Home</a>
+            <a class="navbar-brand" href="http://localhost:8000/add">Add Contact</a>
+        </div>
+    </nav>
+</head>
+<body class="markdown-body">
+    <div>
+        <div>
+            <img src="<%= user.picture.large %>" alt="Contact Profile Thumbnail">
+            <div class="markdown-body aHover" >
+                <a href="http://localhost:8000/users/edit-user/<%= user._id %>">
+                    <img src="http://www.icon2s.com/img16/16x16-black-white-metro-edit-icon.png" alt="edit-icon"/>
+                </a>
+                <span class="markdown-body tooltiptext">Edit User</span>
+            </div>
+        </div>
+
+        <form action="/updateContact" method="post">
+            <fieldset>
+                <ul>
+                    <li>Name: <%= user.name.first + " " + user.name.last %>
+                        <input type="text" id="updateName" name="updateName" placeholder="Update name" /> <br>
+                    </li>
+                    <li>Address: <%= user.location.street %>,<br>
+                        <%= user.location.city %>,<br>
+                        <%= user.location.state %>,<br>
+                        <%= user.location.zip %>.
+                        <input type="text" id="updateAddress" name="updateAddress" placeholder="Update Address" />
+                    </li>
+                    <li>Email: <%= user.email %>
+                        <input type="text" id="updateEmail" name="updateEmail" placeholder="Update Email" />
+                    </li>
+                    <li>Phone: <%= user.phone %>
+                        <input type="text" id="updatePhone" name="updatePhone" placeholder="Update Phone" />
+                    </li>
+                    <li>Mobile: <%= user.cell %>
+                        <input type="text" id="updateMobile" name="updateMobile" placeholder="Update Mobile" />
+                    </li>
+                </ul>
+                <input type="submit" value="Update Contact" />
+            </fieldset>
+        </form>
+    </div>
+</body>
